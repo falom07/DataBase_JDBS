@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a0a5152-c4b0-4ade-88a7-cabb2b88bb87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDetailsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/User_DetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/UserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BusinessLogic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDetailsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDetailsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/User_DetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/User_DetailsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -127,7 +120,7 @@
       <workItem from="1695704364613" duration="8033000" />
       <workItem from="1695792441977" duration="339000" />
       <workItem from="1695798710514" duration="7640000" />
-      <workItem from="1695820592584" duration="8157000" />
+      <workItem from="1695820592584" duration="14812000" />
     </task>
     <servers />
   </component>

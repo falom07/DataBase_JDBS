@@ -1,15 +1,15 @@
 package DAO;
 
+import Entity.Product;
 import Entity.User;
-import Service.User_DetailsService;
 
 import java.sql.SQLException;
-import java.util.List;
 
-public interface UserDAO {
-    void add(User user) throws SQLException;
+public interface ProductDAO {
+    void add(Product product) throws SQLException;
     void getAll() throws SQLException;
     void getById(int id) throws SQLException;
     void delete( int id) throws SQLException;
-    void update(User user) throws SQLException;
+    void update(Product product, int id_user) throws SQLException;
+
 }

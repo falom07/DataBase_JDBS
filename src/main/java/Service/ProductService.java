@@ -1,23 +1,25 @@
 package Service;
 
 import BusinessLogic.Utils;
-import DAO.UserDAO;
+import DAO.ProductDAO;
+import Entity.Product;
 import Entity.User;
-import Entity.UserDetails;
 
 import java.sql.*;
 
-public class UserService extends Utils implements UserDAO {
+public class ProductService extends Utils implements ProductDAO {
     Connection connection = getConection();
     @Override
-    public void add(User user) throws SQLException {
+    public void add(Product product) throws SQLException {
         PreparedStatement preparedStatement = null;
 
-        String sql = "Insert into user(name) value (?)";
+        String sql = "Insert into product(product,price,detail_information) value (?,?,?)";
         try  {
             preparedStatement = connection.prepareStatement(sql);
 
-            preparedStatement.setString(1, user.getName());
+            preparedStatement.setString(1, product.getProduct());
+            preparedStatement.setInt(2, product.getPrice());
+            preparedStatement.setString(3, product.getDetail_information());
 
             preparedStatement.executeUpdate();
 
@@ -38,15 +40,16 @@ public class UserService extends Utils implements UserDAO {
     public void getAll() throws SQLException{
         Statement statement = null;
 
-        String sql = "Select * from user";
+        String sql = "Select * from product";
 
         try {
             statement = connection.createStatement();
             ResultSet resultset = statement.executeQuery(sql);
 
             while(resultset.next()){
-                System.out.print("id: " + resultset.getInt("id") + " -- ");
-                System.out.println("name: " + resultset.getString("name"));
+                System.out.print("product name: " + resultset.getString("product") + " -- ");
+                System.out.print("price: " + resultset.getInt("price"));
+                System.out.println(" -- detail_information: " + resultset.getString("detail_information"));
             }
         }catch (SQLException e){
             throw new RuntimeException(e);
@@ -62,14 +65,16 @@ public class UserService extends Utils implements UserDAO {
     @Override
     public void getById(int id) throws SQLException{
         PreparedStatement preparedStatement = null;
-        String sql = "Select name from user where id = ?";
+        String sql = "Select product,price,detail_information from product where id = ?";
         try  {
             preparedStatement = connection.prepareStatement(sql);
 
             preparedStatement.setInt(1, id);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                System.out.println("name by id " + id + " ->" + resultSet.getString("name"));
+            ResultSet resultset = preparedStatement.executeQuery();
+            while (resultset.next()) {
+                System.out.print("product name: " + resultset.getInt("product") + " -- ");
+                System.out.println("price: " + resultset.getString("price"));
+                System.out.println("detail_information: " + resultset.getString("detail_information"));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -88,7 +93,7 @@ public class UserService extends Utils implements UserDAO {
     public void delete( int id) throws SQLException{
 
         PreparedStatement preparedStatement = null;
-        String sql = "delete from user where id = ?";
+        String sql = "delete from product where id = ?";
         try  {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
@@ -106,13 +111,15 @@ public class UserService extends Utils implements UserDAO {
     }
 
     @Override
-    public void update(User user) throws SQLException {
+    public void update(Product product,int id_user) throws SQLException {
         PreparedStatement preparedStatement =null;
-        String sql = "Update user set name = ? where id = ?";
+        String sql = "Update user set product = ? ,price = ? ,detail_information = ? where id = ?";
         try  {
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(2, user.getId());
-            preparedStatement.setString(1, user.getName());
+            preparedStatement.setInt(2,product.getPrice() );
+            preparedStatement.setInt(4,id_user );
+            preparedStatement.setString(1,product.getProduct() );
+            preparedStatement.setString(3,product.getDetail_information() );
 
             preparedStatement.executeUpdate();
 
@@ -129,48 +136,3 @@ public class UserService extends Utils implements UserDAO {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

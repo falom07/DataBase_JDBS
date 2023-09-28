@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a0a5152-c4b0-4ade-88a7-cabb2b88bb87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/UserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/ChoppingaCartDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/ChoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Service/ChoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Service/OrderServise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5085cd86-6f08-4480-98ab-396b73269300.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5085cd86-6f08-4480-98ab-396b73269300.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BusinessLogic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDetailsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDetailsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Service/User_DetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/User_DetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/vitalik/Project Programiring/All_From_Past/Date_Base_Hibernate",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -121,6 +137,7 @@
       <workItem from="1695792441977" duration="339000" />
       <workItem from="1695798710514" duration="7640000" />
       <workItem from="1695820592584" duration="14812000" />
+      <workItem from="1695906973152" duration="16219000" />
     </task>
     <servers />
   </component>
@@ -132,7 +149,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Service/UserService.java</url>
-          <line>13</line>
+          <line>15</line>
           <properties class="Service.UserService">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -141,12 +158,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Service/UserService.java</url>
-          <line>69</line>
+          <line>80</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Service/UserService.java</url>
-          <line>66</line>
+          <line>74</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
